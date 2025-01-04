@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="errorvalidation" />
+		</run>
+	</groups>
+	<test thread-count="5" name="submitOrderTest">
+		<classes>
+			<class name="SoftwareTest.PracticeProject.tests.StandAloneTest" />
+
+		</classes>
+	</test>
+	<test thread-count="5" name="LoginErrorValidatiotest">
+		<classes>
+
+			<class
+				name="SoftwareTest.PracticeProject.tests.LoginErrorValidation" />
+		</classes>
+	</test>
+
+</suite> 
